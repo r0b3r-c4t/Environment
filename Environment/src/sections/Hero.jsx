@@ -25,7 +25,7 @@ export const Hero = () => {
             </div>
 
             {/* 2. Contenido superpuesto con z-index superior */}
-            <div className="relative z-10 container mx-auto px-4 text-center">
+            <div translate='no' className="notranslate relative z-10 container mx-auto px-4 text-center">
 
                 <TrueFocus
                     sentence="Improve your Environment"
