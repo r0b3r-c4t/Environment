@@ -27,7 +27,7 @@ export function Navbar() {
                             alt="Logo"
                             className="h-10 w-auto object-contain"
                         />
-                        <span className="ml-2 text-sm font-medium text-white/75">Environment</span>
+                        <span translate="no" className="notranslate ml-2 text-sm font-medium text-white/75">Environment</span>
                     </a>
                 </div>
 
