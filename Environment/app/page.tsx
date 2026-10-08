@@ -2,6 +2,8 @@ import { About } from '@/sections/About';
 import { Hero } from '@/sections/Hero';
 import { Navbar } from '@/components/Navbar';
 import { Contact } from '@/sections/Contact';
+import { Services } from '@/sections/Services';
+import { Solutions } from '@/sections/Solutions';
 
 export default function HomePage() {
   return (
@@ -9,6 +11,8 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <About />
+      <Services />
+      <Solutions />
       <Contact />
     </main>
   );

@@ -1,11 +1,22 @@
 import { Box } from 'lucide-react';
 import { SpotlightCard } from '@/components/SpotlightCard';
+import GradualBlur from '@/components/GradualBlur';
 
 
 export const About = () => {
 
   return (
     <section id="about" className="bg-black px-4 py-24 text-white sm:px-6 lg:py-32">
+      <GradualBlur
+        target="parent"
+        position="bottom"
+        height="7rem"
+        strength={2}
+        divCount={5}
+        curve="bezier"
+        exponential
+        opacity={1}
+      />
       <div className="mx-auto max-w-6xl">
         <p className="mb-4 flex items-center gap-2 text-sm font-semibold tracking-[0.22em] text-violet-300 uppercase">
           - Discover <span translate='no' className='notranslate'> Environment </span>
@@ -24,6 +35,8 @@ export const About = () => {
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">
                 <span translate='no' className='notranslate'>Environment</span>  is a technology company focused on transforming the way businesses operate through software, automation, and artificial intelligence.
+                <br />
+                <br />We design custom software, automate processes, connect systems, and apply artificial intelligence to solve operational challenges and create more efficient digital environments.
               </p>
             </div>
 
@@ -38,7 +51,7 @@ export const About = () => {
             </div>
           </div>
         </SpotlightCard>
-      </div>   
+      </div>
     </section>
   );
 };
