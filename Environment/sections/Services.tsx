@@ -99,12 +99,13 @@ export const Services = () => {
                 </p>
 
                 <div className="mb-12 flex flex-col gap-5 md:mb-14 md:flex-row md:items-end md:justify-between">
-                    <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-                        Technology that moves your business forward.
-                    </h2>
                     <p className="max-w-md text-base leading-7 text-zinc-400">
                         From custom software to cloud infrastructure, we create connected solutions for the way you work.
                     </p>
+
+                    <h2 className="max-w-2xl text-right text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+                        Technology that moves your business forward.
+                    </h2>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

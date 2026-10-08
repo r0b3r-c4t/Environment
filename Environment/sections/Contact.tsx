@@ -38,8 +38,8 @@ export function Contact() {
             </div>
 
             {/* CONTENIDO (GRID CON EL FORMULARIO A LA IZQUIERDA) */}
-            <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center px-6 py-28 lg:px-8">
-                <div className="w-full max-w-xl">
+            <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center justify-center px-6 py-28 lg:px-8">
+                <div className="w-full max-w-xl text-center">
                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-slate-200/80 backdrop-blur-sm">
                         <Mail size={12} />
                         Contact
@@ -49,12 +49,12 @@ export function Contact() {
                         Improve your Environment with us
                     </h2>
 
-                    <p className="mt-5 max-w-lg text-base leading-7 text-slate-300 sm:text-lg">
+                    <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-slate-300 sm:text-lg">
                         Tell us about your idea, goals, and timeline. We&apos;ll help shape a clear, strategic path from concept to launch.
                     </p>
 
                     <div className="mt-8 space-y-4 text-sm text-slate-200/80">
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center justify-center gap-3">
                             <span className="grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-white/5 text-violet-300">
                                 <MessageSquareText size={16} />
                             </span>
@@ -67,7 +67,7 @@ export function Contact() {
                             className="rounded-[29px] border border-white/10 bg-slate-950/60 p-5 backdrop-blur-xl sm:p-7"
                             spotlightColor="rgba(96, 165, 250, 0.18)"
                         >
-                            <form className="space-y-5">
+                            <form className="space-y-5 text-left">
                                 <div className="grid gap-5 sm:grid-cols-2">
                                     <label className="block text-sm text-slate-200">
                                         <span className="mb-2 block">Name</span>
