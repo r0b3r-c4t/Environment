@@ -1,8 +1,9 @@
 'use client';
 
-import { ArrowRight, Mail, MapPin, MessageSquareText } from 'lucide-react';
-import ColorBends from '@/components/ColorBends';
+import { ArrowRight, Mail, MessageSquareText } from 'lucide-react';
 import { SpotlightCard } from '@/components/SpotlightCard';
+import ColorBends from '@/components/ColorBends';
+import SpecularButton from '@/components/SpecularButton';
 
 export function Contact() {
     return (
@@ -11,7 +12,7 @@ export function Contact() {
             className="relative min-h-screen overflow-hidden bg-slate-950"
         >
             {/* FONDO CON COLORBENDS EN VERTICAL (LADO DERECHO) */}
-            <div 
+            <div
                 className="pointer-events-none absolute inset-y-0 right-0 z-0 w-full lg:w-2/3 overflow-hidden"
                 style={{
                     WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 50%)',
@@ -53,12 +54,6 @@ export function Contact() {
                     </p>
 
                     <div className="mt-8 space-y-4 text-sm text-slate-200/80">
-                        <div className="flex items-center gap-3">
-                            <span className="grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-white/5 text-cyan-300">
-                                <MapPin size={16} />
-                            </span>
-                            Remote worldwide
-                        </div>
                         <div className="flex items-center gap-3">
                             <span className="grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-white/5 text-violet-300">
                                 <MessageSquareText size={16} />
@@ -110,14 +105,29 @@ export function Contact() {
                                         className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-slate-400 transition-colors duration-200 focus:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/10"
                                     />
                                 </label>
-
-                                <button
+                                <SpecularButton
                                     type="submit"
-                                    className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-cyan-400/40 bg-[linear-gradient(135deg,rgba(34,211,238,0.18),rgba(168,85,247,0.18))] px-4 py-3 text-sm font-semibold text-white transition-all hover:translate-y-[-1px] hover:border-cyan-300/70 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)]"
+                                    size="lg"
+                                    radius={18}
+                                    tint="#ffffff"
+                                    tintOpacity={0}
+                                    blur={0}
+                                    textColor="#f5f5f5"
+                                    lineColor="#ffffff"
+                                    baseColor="#525252"
+                                    intensity={1}
+                                    shineSize={10}
+                                    shineFade={40}
+                                    thickness={1}
+                                    speed={0.35}
+                                    followMouse
+                                    proximity={450}
+                                    autoAnimate={false}
+                                    className="w-full gap-2"
                                 >
                                     Send inquiry
                                     <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-                                </button>
+                                </SpecularButton>
                             </form>
                         </SpotlightCard>
                     </div>
