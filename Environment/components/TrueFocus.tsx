@@ -70,7 +70,7 @@ const TrueFocus = ({
 
   return (
     <div
-      className="relative flex flex-wrap items-center justify-center gap-4"
+      className="relative flex flex-col items-center justify-center gap-4 md:flex-row"
       ref={containerRef}
       style={{ outline: 'none', userSelect: 'none' }}
     >

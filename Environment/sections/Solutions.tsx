@@ -123,13 +123,13 @@ export const Solutions = () => {
     return (
         <section id="solutions" className="bg-black px-4 py-24 text-white sm:px-6 lg:py-32">
             <div className="mx-auto max-w-6xl">
-                <p className="mb-4 flex items-center justify-end gap-2 text-sm font-semibold tracking-[0.22em] text-violet-300 uppercase">
+                <p className="mb-4 flex items-center gap-2 text-sm font-semibold tracking-[0.22em] text-violet-300 uppercase">
                     - Our Solutions
                 </p>
 
                 <div className="mb-10 flex flex-col gap-5 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
                     <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-                        Practical solutions for complex challenges.
+                        Smart solutions for complex challenges.
                     </h2>
                     <p className="max-w-md text-base leading-7 text-zinc-400">
                         Explore how we help businesses work smarter, connect their systems, and grow with technology.
@@ -152,27 +152,32 @@ export const Solutions = () => {
                             aria-label={`${index + 1} of ${solutions.length}: ${title}`}
                         >
                             <SpotlightCard
-                                className="grid min-h-[390px] gap-8 rounded-3xl border-white/10 bg-white/[0.025] p-6 sm:min-h-[340px] sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:items-center sm:gap-12 sm:p-10 lg:p-14"
+                                className="min-h-[390px] rounded-3xl border-white/10 bg-white/[0.025] p-6 sm:min-h-[340px] sm:p-10 lg:p-14"
                                 spotlightColor="rgba(82, 39, 255, 0.24)"
                             >
-                                <div>
+                                <div className="relative grid gap-8 sm:gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
                                     <div className="mb-6 flex items-center gap-4">
                                         <span className="grid size-14 place-items-center rounded-2xl border border-violet-300/20 bg-violet-400/10 text-violet-200">
                                             <Icon size={25} aria-hidden="true" />
                                         </span>
+
                                         <span className="text-xs font-semibold tracking-[0.2em] text-violet-200/70">
                                             SOLUTION {String(index + 1).padStart(2, '0')}
                                         </span>
                                     </div>
-                                    <h3 className="max-w-lg text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
-                                        {title}
-                                    </h3>
-                                    <p className="mt-5 max-w-xl text-base leading-7 text-zinc-400">
-                                        {description}
-                                    </p>
+
+                                    <div className="max-w-xl text-left md:ml-auto md:text-right">
+                                        <h3 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
+                                            {title}
+                                        </h3>
+
+                                        <p className="mt-4 text-base leading-7 text-zinc-400">
+                                            {description}
+                                        </p>
+                                    </div>
                                 </div>
 
-                                <ul className="grid content-center gap-3 sm:grid-cols-2 sm:gap-4">
+                                <ul className="mt-10 grid content-center gap-3 sm:grid-cols-2 sm:gap-4">
                                     {features.map((feature) => (
                                         <li
                                             key={feature}
@@ -196,11 +201,10 @@ export const Solutions = () => {
                                 key={solution.id}
                                 type="button"
                                 onClick={() => scrollToSolution(index)}
-                                className={`rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-300 ${
-                                    activeIndex === index
-                                        ? 'h-3 w-7 bg-violet-300'
-                                        : 'size-2.5 bg-white/25 hover:bg-white/50'
-                                }`}
+                                className={`rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-300 ${activeIndex === index
+                                    ? 'h-3 w-7 bg-violet-300'
+                                    : 'size-2.5 bg-white/25 hover:bg-white/50'
+                                    }`}
                                 aria-label={`Go to solution ${index + 1}: ${solution.title}`}
                                 aria-current={activeIndex === index ? 'true' : undefined}
                             />
