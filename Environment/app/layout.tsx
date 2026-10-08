@@ -3,7 +3,10 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Environment',
-  description: 'Environment — smart technology solutions',
+  description: 'Environment — Improve your environment',
+  icons: {
+    icon: '/Icon.png'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
