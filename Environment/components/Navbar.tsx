@@ -27,7 +27,7 @@ export function Navbar() {
         <header className="fixed inset-x-0 top-5 z-50 px-4 sm:top-6">
             <nav
                 aria-label="Main navigation"
-                className="relative mx-auto flex max-w-6xl items-center rounded-3xl border border-white/20 bg-slate-950/45 px-4 py-3 shadow-2xl shadow-slate-950/30 backdrop-blur-xl sm:px-5"
+                className="relative mx-auto flex max-w-6xl items-center rounded-[26px] border border-white/15 bg-slate-950/20 px-4 py-3 shadow-[0_0_30px_rgba(15,23,42,0.35)] backdrop-blur-2xl sm:px-5"
             >
                 <div className="mr-auto flex items-center">
                     <a href="#home" className="mr-auto flex items-center">
